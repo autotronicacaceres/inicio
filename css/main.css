@@ -778,7 +778,7 @@ ul.sub-menu {
 }
 
 .tour-button {
-  background-image: url(../images/home/tour-icon2.png);
+  background-image: url(../images/home/blanco.png);
   height: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1929,12 +1929,12 @@ span.stButton_gradient,
 *****************************/
 #map-section {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   position: relative;
 }
 
-#gmap {
-  height: 350px;
+#map {
+  height: 400px;
 }
 
 .get-in-touch img {

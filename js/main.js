@@ -112,34 +112,40 @@ jQuery(function($) {'use strict';
 
 });
 
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var labelIndex = 0;
 
-function initialize() {
-  var bangalore = { lat: 12.97, lng: 77.59 };
+
+// This example displays a marker at the center of Autotronica caceres
+// When the user clicks the marker, an info window opens.
+// The maximum width of the info window is set to 200 pixels.
+
+function initMap() {
+  var uluru = {lat: -17.3611917, lng: -66.194133};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: bangalore
+    zoom: 15,
+    center: uluru
   });
 
-  // This event listener calls addMarker() when the map is clicked.
-  google.maps.event.addListener(map, 'click', function(event) {
-    addMarker(event.latLng, map);
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Autotronica Caceres</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Calle Litoral</b> - <b>Zona Linde Sud</b> ' +
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 200
   });
 
-  // Add a marker at the center of the map.
-  addMarker(bangalore, map);
-}
-
-// Adds a marker to the map.
-function addMarker(location, map) {
-  // Add the marker at the clicked location, and add the next-available label
-  // from the array of alphabetical characters.
   var marker = new google.maps.Marker({
-    position: location,
-    label: labels[labelIndex++ % labels.length],
-    map: map
+    position: uluru,
+    map: map,
+    title: 'Autotronica Caceres Orellana'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
   });
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
