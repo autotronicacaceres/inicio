@@ -7,17 +7,17 @@
   Version: 1.1
   */
 
-  @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+  @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
   @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
   body {
     background: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oleo+Script';
     font-weight: 300;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 22px;
-    color: #000;
+    color: #222;
   }
 
   html {
@@ -53,17 +53,17 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oleo+Script';
     font-weight: 300;
   }
 
   h1{
-    color: #686868;
+    color: #404040;
   }
 
   h2{
     font-size: 24px;
-    color: #686868;
+    color: #404040;
   }
 
   h3{
@@ -82,7 +82,7 @@
     font-size: 14px;
     color: #0099ae;
     border: 1px solid #0099ae;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oleo+Script';
     font-weight: 300;
     padding: 10px 25px;
   }
@@ -276,7 +276,7 @@
 
 #header .navbar-nav.navbar-right >li a {
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   padding: 20px;
   text-transform: uppercase;
   font-weight: 300;
@@ -309,7 +309,7 @@ ul.sub-menu {
 #header .navbar-nav li ul.sub-menu li a{
   color: #818285;
   padding: 5px 0;
-  font-size: 13px;
+  font-size: 15px;
   display: block;
   text-transform: capitalize;
 }
