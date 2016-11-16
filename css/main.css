@@ -221,7 +221,7 @@
 
 .social-icons ul li a{
   font-size: 18px;
-  color: #d3d3d3;
+  color: #00BCD4;
   padding: 0;
 }
 
@@ -387,7 +387,7 @@ ul.sub-menu {
 
 #footer {
   padding-bottom: 10px;
-  background-image: url(../images/home/footer.png);
+  background-image: url(../images/home/footer3.png);
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: contain;
